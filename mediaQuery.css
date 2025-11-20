@@ -1,0 +1,86 @@
+@media screen and (max-width: 1200px) {
+    .second-container{
+        flex-direction: column;
+    }
+    .studentId, .semester{
+        width: 100%;
+    }
+    .second-container-btn{
+        width: 100%;
+    }
+    .second-container-btn button{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar{
+        position: absolute;
+        transform: translateX(-100%);
+        z-index: 99;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    #sidebar-toggle:checked ~ .sidebar {
+        transform: translateX(0);
+    }
+    .main-content{
+        padding-left: 3rem;
+    }
+    .first-container{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--margin1);
+    }
+    .profile-container{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .third-container{
+        flex-direction: column;
+    }
+    .dashboard-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--margin1);
+    }
+    .header-buttons{
+        width: 100%;
+        flex-direction: column;
+    }
+    .header-buttons button{
+        width: 100%;
+    }
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+    td:nth-of-type(1):before { content: "SUBJECT"; }
+    td:nth-of-type(2):before { content: "CODE"; }
+    td:nth-of-type(3):before { content: "SCORE"; }
+    td:nth-of-type(4):before { content: "GRADE"; }
+    td:nth-of-type(5):before { content: "REMARK"; }
+}

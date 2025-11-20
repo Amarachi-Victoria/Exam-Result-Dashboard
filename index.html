@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mediaQuery.css">
+    <title>Exam Result Dashbaord</title>
+</head>
+<body>
+
+     <div class="App-container">
+        <input type="checkbox" id="sidebar-toggle">
+        <label for="sidebar-toggle" class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!--side Bar  -->
+        <div class="sidebar">
+            <div class="upper-sidebar">
+                <div class="dashboardItem-container">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <p>Dashbaord</p>
+                </div>
+                <div class="dashboardItem-container">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Profile</p>
+                </div>
+                <div class="dashboardItem-container">
+                    <i class="fa-solid fa-money-check-dollar"></i>
+                    <p>Payments</p>
+                </div>
+                <div class="dashboardItem-container">
+                    <i class="fa-solid fa-book-open"></i>
+                    <p>Courses</p>
+                </div>
+                <div class="dashboardItem-container active">
+                    <i class="fa-solid fa-display"></i>
+                    <p>Live Results</p>
+                </div>
+                <div class="dashboardItem-container">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <p>Alumni Zone</p>
+                </div>
+                <div class="dashboardItem-container">
+                    <i class="fa-solid fa-file"></i>
+                   <p>Applications</p>
+                </div>
+                <div class="dashboardItem-container">
+                    <i class="fa-solid fa-grip"></i>
+                    <p>More</p>
+                </div>
+            </div>
+
+
+            <div class="lower-sidebar">
+                <div class="dashboardItem-container">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Settings</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Main Content -->
+         <div class="main-content">
+            <div class="first-container">
+                <div class="live-results">
+                    <p>Live Results</p>
+                </div>
+                
+                <div class="profile-container">
+                    <p>Amarachi Victoria</p>
+                    <img src="./img/profile img.jpg" alt="">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </div>
+            </div>
+
+            <div class="second-container">
+                 <div class="studentId">
+                    <label for="studentId">Student ID</label>
+                    <input type="text" id="studentId" placeholder="123-456-789">
+                 </div>
+
+                 <div class="semester">
+                    <label for="semester">Select Semester</label>
+                    <select name="semester" id="semester">
+                        <option value="1st_semester">1st Semester</option>
+                        <option value="2nd_semester">2nd Semester</option>
+                    </select>
+                 </div>
+
+                 <div class="second-container-btn">
+                    <button type="submit">SUBMIT</button>
+                 </div>
+            </div>
+
+            <div class="third-container">
+                <div class="card secondary">
+                    <input type="checkbox" id="card-toggle-1">
+                    <label for="card-toggle-1" class="card-flip-btn">
+                        <i class="fa-solid fa-rotate"></i>
+                    </label>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fa-solid fa-book-open"></i>
+                            <p>Total Courses</p>
+                            <p>40</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Completed: 35</p>
+                            <p>Pending: 5</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="card tertiary">
+                    <input type="checkbox" id="card-toggle-2">
+                    <label for="card-toggle-2" class="card-flip-btn">
+                        <i class="fa-solid fa-rotate"></i>
+                    </label>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                            <p>Exams Taken</p>
+                            <p>12</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Passed: 10</p>
+                            <p>Failed: 2</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="card quaternary">
+                    <input type="checkbox" id="card-toggle-3">
+                    <label for="card-toggle-3" class="card-flip-btn">
+                        <i class="fa-solid fa-rotate"></i>
+                    </label>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fa-solid fa-laptop-file"></i>
+                            <p>Projects Submitted</p>
+                            <p>8</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Approved: 7</p>
+                            <p>Rejected: 1</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="card quinary">
+                    <input type="checkbox" id="card-toggle-4">
+                    <label for="card-toggle-4" class="card-flip-btn">
+                       <i class="fa-solid fa-rotate"></i>
+                    </label>
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <i class="fa-solid fa-file-circle-plus"></i>
+                            <p>Assignments Due</p>
+                            <p>3</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Today: 1</p>
+                            <p>This Week: 2</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="fourth-container">
+                <div class="result-dashboard">
+                    <div class="dashboard-header">
+                        <h1>Overall Result</h1>
+                        <div class="header-buttons">
+                            <button class="btn-primary">Download Result</button>
+                            <button class="btn-secondary">Share</button>
+                            <button class="btn-tertiary">Print</button>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SUBJECT</th>
+                                    <th>CODE</th>
+                                    <th>SCORE</th>
+                                    <th>GRADE</th>
+                                    <th>REMARK</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Mathematics</td>
+                                    <td>MTH101</td>
+                                    <td>85</td>
+                                    <td>A</td>
+                                    <td>Excellent</td>
+                                </tr>
+                                <tr>
+                                    <td>English</td>
+                                    <td>ENG101</td>
+                                    <td>75</td>
+                                    <td>B</td>
+                                    <td>Good</td>
+                                </tr>
+                                <tr>
+                                    <td>Physics</td>
+                                    <td>PHY101</td>
+                                    <td>65</td>
+                                    <td>C</td>
+                                    <td>Average</td>
+                                </tr>
+                                <tr>
+                                    <td>Chemistry</td>
+                                    <td>CHM101</td>
+                                    <td>55</td>
+                                    <td>D</td>
+                                    <td>Pass</td>
+                                </tr>
+                                <tr>
+                                    <td>Biology</td>
+                                    <td>BIO101</td>
+                                    <td>45</td>
+                                    <td>E</td>
+                                    <td>Fail</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </div>
+</body>
+</html>
