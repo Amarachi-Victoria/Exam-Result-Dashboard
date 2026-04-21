@@ -25,6 +25,7 @@ Raw academic results can be difficult to interpret quickly. This dashboard helps
 
 ## Technology Used
 - HTML
+- CSS
 
 ## How to Use
 1. Open the application
